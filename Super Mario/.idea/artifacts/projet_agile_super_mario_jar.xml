@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="projet-agile-super-mario:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/projet_agile_super_mario_jar</output-path>
+    <root id="archive" name="projet-agile-super-mario.jar">
+      <element id="module-output" name="projet-agile-super-mario" />
+    </root>
+  </artifact>
+</component>
