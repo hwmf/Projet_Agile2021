@@ -11,3 +11,4 @@
 - Ajouter un menu pour le jeu
 - Implémentation d'un pipeline CI/CD pour créer des packages automatiquement
 - Corrections de bugs généraux
+- Ajouter une animation au caractère
