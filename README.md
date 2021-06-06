@@ -7,7 +7,7 @@
 - Ajout de l'intégration Maven
 - Système de collision de joueurs amélioré
 - Conception d'actifs originaux pour le jeu
-- Nettoyage du code source
-- Coder un menu pour le jeu
+- Nettoyer le code source
+- Ajouter un menu pour le jeu
 - Implémentation d'un pipeline CI/CD pour créer des packages automatiquement
 - Corrections de bugs généraux
