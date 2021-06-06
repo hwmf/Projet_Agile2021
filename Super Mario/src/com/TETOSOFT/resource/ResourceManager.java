@@ -18,7 +18,7 @@ public class ResourceManager {
 
 	public static Image LoadImage(String name){
 		String filename = "images/" + name;
-		return new ImageIcon(filename).getImage();
+		return new ImageIcon(ResourceManager.class.getResource(filename)).getImage();
 	}
 
 	public static Image getMirrorImage(Image image) {
@@ -32,7 +32,7 @@ public class ResourceManager {
 	public static Image LoadBackground(String name)
 	{
 		String filename = "Assets/backgrounds/" + name;
-		return new ImageIcon(filename).getImage();
+		return new ImageIcon(ResourceManager.class.getResource(filename)).getImage();
 	}
 
 	private static Image getScaledImage(Image image, float x, float y) {
@@ -69,7 +69,7 @@ public class ResourceManager {
 		{
 			String fileName = "Assets/player/idle/" + (frame + 1) + ".png";
 
-			Image playerImage = new ImageIcon(fileName).getImage();
+			Image playerImage = new ImageIcon(ResourceManager.class.getResource(fileName)).getImage();
 			Image newImage = gc.createCompatibleImage(Player.width, Player.height,Transparency.BITMASK);
 			Graphics2D g = (Graphics2D) newImage.getGraphics();
 			g.drawImage(playerImage, 0,0, Player.width,Player.height, null);
@@ -83,7 +83,7 @@ public class ResourceManager {
 		{
 			String fileName = "Assets/player/death/" + (frame + 1) + ".png";
 
-			Image playerImage = new ImageIcon(fileName).getImage();
+			Image playerImage = new ImageIcon(ResourceManager.class.getResource(fileName)).getImage();
 			Image newImage = gc.createCompatibleImage(Player.width, Player.height,Transparency.BITMASK);
 			Graphics2D g = (Graphics2D) newImage.getGraphics();
 			g.drawImage(playerImage, 0,0, Player.width,Player.height, null);
@@ -99,7 +99,7 @@ public class ResourceManager {
 		{
 			String fileName = "Assets/player/walk/" + (frame + 1) + ".png";
 
-			Image playerImage = new ImageIcon(fileName).getImage();
+			Image playerImage = new ImageIcon(ResourceManager.class.getResource(fileName)).getImage();
 			Image newImage = gc.createCompatibleImage(Player.width, Player.height,Transparency.BITMASK);
 			Graphics2D g = (Graphics2D) newImage.getGraphics();
 			g.drawImage(playerImage, 0,0, Player.width,Player.height, null);
@@ -116,7 +116,7 @@ public class ResourceManager {
 		for (int frame = 0; frame < shroomsMovingFrameCount; ++frame)
 		{
 			String fileName = "Assets/enemies/Shroom/blue/" + (frame + 1) + ".png";
-			Image shroomImage = new ImageIcon(fileName).getImage();
+			Image shroomImage = new ImageIcon(ResourceManager.class.getResource(fileName)).getImage();
 			int width  = 50;
 			int height = 50;
 			Image newImage = gc.createCompatibleImage(width, height,Transparency.BITMASK);
@@ -160,8 +160,8 @@ public class ResourceManager {
 		PowerUp.PowerUpAnimation.coinFrames = new Image[coinCount];
 		for (int coin = 0; coin < coinCount; ++coin)
 		{
-			String fileName = "images/coin" + (coin + 1) + ".png";
-			Image coinImage = new ImageIcon(fileName).getImage();
+			String fileName = "images/coin" + (coin + 1) + ".PNG";
+			Image coinImage = new ImageIcon(ResourceManager.class.getResource(fileName)).getImage();
 			int width  = 40;
 			int height = 40;
 			Image newImage = gc.createCompatibleImage(width, height,Transparency.BITMASK);
@@ -174,7 +174,7 @@ public class ResourceManager {
 		int homeWidth = 100;
 		int homeHeight = 100;
 		String fileName = "images/heart.png";
-		Image home = new ImageIcon(fileName).getImage();
+		Image home = new ImageIcon(ResourceManager.class.getResource(fileName)).getImage();
 		Image newImage = gc.createCompatibleImage(homeWidth, homeHeight,Transparency.BITMASK);
 		Graphics2D g = (Graphics2D) newImage.getGraphics();
 		g.drawImage(home, 0,0, homeWidth,homeHeight, null);

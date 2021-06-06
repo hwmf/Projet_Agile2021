@@ -1,3 +1,5 @@
 Manifest-Version: 1.0
-Main-Class: com.TETOSOFT.tilegame.GameEngine
+Built-By: Aymane CHAKI
+Build-Jdk: 1.8.0_291
+Created-By: Maven Integration for Eclipse
 
