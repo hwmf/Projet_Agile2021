@@ -48,6 +48,7 @@ public class MapLoader
     public Image loadImage(String name) 
     {
         String filename = "images/" + name;
+        //return new ImageIcon(getClass().getResource(filename)).getImage();
         return new ImageIcon(filename).getImage();
     }
 
@@ -253,7 +254,7 @@ public class MapLoader
 
         // load left-facing images
         images[0] = new Image[] {
-            loadImage("player2.png"),         
+            loadImage("player.png"),         
             loadImage("fly1.png"),
             loadImage("fly2.png"),
             loadImage("fly3.png"),
@@ -339,14 +340,14 @@ public class MapLoader
         anim.addFrame(loadImage("coin5.png"),250);
         coinSprite = new PowerUp.Star(anim);
 
-        // create "music" sprite
-        anim = new Animation();
-        anim.addFrame(loadImage("music1.png"), 150);
-        anim.addFrame(loadImage("music2.png"), 150);
-        anim.addFrame(loadImage("music3.png"), 150);
-        anim.addFrame(loadImage("music2.png"), 150);
-        musicSprite = new PowerUp.Music(anim);
-        musicSprite=new PowerUp.Music(anim);
+//        // create "music" sprite
+//        anim = new Animation();
+//        anim.addFrame(loadImage("music1.png"), 150);
+//        anim.addFrame(loadImage("music2.png"), 150);
+//        anim.addFrame(loadImage("music3.png"), 150);
+//        anim.addFrame(loadImage("music2.png"), 150);
+//        musicSprite = new PowerUp.Music(anim);
+//        musicSprite=new PowerUp.Music(anim);
     }
 
 }

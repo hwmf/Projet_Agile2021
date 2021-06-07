@@ -17,7 +17,7 @@ public class SoundManager {
 
     private AudioInputStream loadAudio(String url) {
         try {
-            InputStream audioSrc = getClass().getResourceAsStream("audio/" + url + ".wav");
+            InputStream audioSrc = getClass().getResourceAsStream("/resources/audio/" + url + ".wav");
             InputStream bufferedIn = new BufferedInputStream(audioSrc);
             return AudioSystem.getAudioInputStream(bufferedIn);
 

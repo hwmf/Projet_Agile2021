@@ -50,7 +50,7 @@ public class GameEngine extends GameCore
         
         // load resources
         drawer = new TileMapDrawer();
-        drawer.setBackground(mapLoader.loadImage("background2.jpg"));
+        drawer.setBackground(mapLoader.loadImage("background.jpg"));
         
         // load first map
         map = mapLoader.loadNextMap();
@@ -121,11 +121,11 @@ public class GameEngine extends GameCore
         g.drawString("Press ESC for EXIT.",10.0f,20.0f);
         g.setColor(Color.GREEN);
         g.drawString("HOW TO PLAY THE GAME?",10.0f,100.0f);
-        g.setColor(Color.WHITE);
+        g.setColor(Color.BLACK);
         g.drawString("Press -> to go RIGHT.",10.0f,120.0f);
-        g.setColor(Color.WHITE);
+        g.setColor(Color.BLACK);
         g.drawString("Press <- to go LEFT.",10.0f,140.0f);
-        g.setColor(Color.WHITE);
+        g.setColor(Color.BLACK);
         g.drawString("Press Space to JUMP.",10.0f,160.0f);
         g.setColor(Color.GREEN);
         g.drawString("Coins: "+collectedStars,300.0f,20.0f);
