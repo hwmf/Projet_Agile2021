@@ -12,7 +12,6 @@ import com.TETOSOFT.graphics.ScreenManager;
 public abstract class GameCore {
 
 
-	private final static int WIDTH = 1268, HEIGHT = 708;
     protected static final int FONT_SIZE = 18;
 
     private static final DisplayMode POSSIBLE_MODES[] = {
